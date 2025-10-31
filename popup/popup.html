@@ -1,0 +1,113 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>SUNA</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="popup.css" />
+  <style>
+    body {
+      font-family: system-ui, sans-serif;
+      margin: 0;
+      padding: 12px;
+      width: 320px;
+    }
+
+    h1 {
+      font-size: 20px;
+      margin-bottom: 10px;
+      color: #111827;
+    }
+
+    fieldset {
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      padding: 10px;
+      margin-bottom: 12px;
+    }
+
+    fieldset legend {
+      font-weight: 600;
+      color: #1e3a8a;
+    }
+
+    fieldset label {
+      display: block;
+      margin-bottom: 8px;
+    }
+
+    select,
+    input[type="range"],
+    input[type="checkbox"] {
+      margin-top: 4px;
+    }
+
+    #save {
+      display: block;
+      width: 100%;
+      padding: 8px;
+      font-size: 15px;
+      font-weight: 600;
+      background-color: #2563eb;
+      color: white;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+      transition: background 0.2s ease;
+    }
+
+    #save:hover {
+      background-color: #1e40af;
+    }
+
+    #status {
+      margin-top: 10px;
+      font-weight: 500;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <h1>SUNA</h1>
+
+    <fieldset>
+      <legend>Personalization</legend>
+
+      <label>
+        Preferred language<br />
+        <select id="lang">
+          <option value="en">English</option>
+          <option value="es">Español</option>
+          <option value="fr">Français</option>
+          <option value="zh">中文</option>
+        </select>
+      </label>
+
+      <label>
+        TTS rate<br />
+        <input id="rate" type="range" min="0.5" max="2" step="0.1" />
+      </label>
+
+      <label>
+        TTS pitch<br />
+        <input id="pitch" type="range" min="0" max="2" step="0.1" />
+      </label>
+
+      <label>
+        Simplification level<br />
+        <select id="simplify">
+          <option>grade-5</option>
+          <option selected>grade-6</option>
+          <option>grade-7</option>
+        </select>
+      </label>
+    </fieldset>
+
+    <button id="save">Save</button>
+    <p id="status" role="status" aria-live="polite"></p>
+  </main>
+
+  <script type="module" src="popup.js" defer></script>
+</body>
+</html>

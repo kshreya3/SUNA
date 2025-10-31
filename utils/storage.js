@@ -1,0 +1,2 @@
+export async function getPrefs(){ const { enableAI_prefs } = await chrome.storage.local.get('enableAI_prefs'); return enableAI_prefs || {}; }
+export async function setPrefs(p){ const cur = await getPrefs(); await chrome.storage.local.set({ enableAI_prefs: { ...cur, ...p } }); }
