@@ -29,8 +29,6 @@ It uses **Google’s Built-in AI APIs** (Prompt API, Proofreader, Translator, Su
 - Detects grammar, tone, and clarity issues.
 - Allows users to rewrite text in different styles (formal, concise, neutral).
 
-—
-
 ## Tech Stack
 
 | Component | Technology |
