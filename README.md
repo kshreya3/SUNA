@@ -57,5 +57,5 @@ It uses **Google’s Built-in AI APIs** (Prompt API, Proofreader, Translator, Su
    - Click the icon to open the pop-up and configure preferences.
 
 ---
-
+Pending Review: Chrome Web Store Listing ID: boabjeepbfdeaaidfhjdcpjkcefkejgi
 
